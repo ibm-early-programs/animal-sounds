@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: your-app
+  host: your-app
+  disk_quota: 1024M
+  buildpack: https://github.com/cloudfoundry/python-buildpack#v1.5.4
+  cf_stacks:
+    - cflinuxfs2
