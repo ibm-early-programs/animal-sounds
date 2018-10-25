@@ -1,5 +1,5 @@
 # Animal Sounds
-Utility Applications to be used with Animal Sounds Machine Learning course
+Utility Applications to be used with Animal Sounds Machine Learning course. 
 
 ## OSP Converter
 Performs Signal Processing against a directory of audio files.
@@ -20,7 +20,16 @@ Run the application
 python ospconverter.py
 ````
 
-The resulting csv file will be in the output folder.
+The resulting csv file will be in the output folder. The Application
+produces a simplified table representing an audio spectogram that can
+be used to create machine learning models to recognize audio sounds.
+
+An
+enhancement would be to take a digitial signature, eg the top 10
+amplitudes and the frequencies they occur at, producing a table with 21
+columns per row. The first row being the class identifier. We leave that
+as an exercise for our consumers, though we might consider adding it
+ourselves in the near future.
 
 ## OSP Service
 Provides a web based API to performs Signal Processing
