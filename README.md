@@ -1,5 +1,5 @@
 # Animal Sounds
-Utility Applications to be used with Animal Sounds Machine Learning course. 
+Utility Applications to be used with Animal Sounds Machine Learning course.
 
 ## OSP Converter
 Performs Signal Processing against a directory of audio files.
@@ -25,8 +25,8 @@ produces a simplified table representing an audio spectogram that can
 be used to create machine learning models to recognize audio sounds.
 
 An
-enhancement would be to take a digitial signature, eg the top 10
-amplitudes and the frequencies they occur at, producing a table with 21
+enhancement would be to take a digitial signature, eg the top 10 and bottom 10
+amplitudes and the frequencies they occur at, producing a table with 41
 columns per row. The first row being the class identifier. We leave that
 as an exercise for our consumers, though we might consider adding it
 ourselves in the near future.
