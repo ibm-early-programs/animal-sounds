@@ -6,6 +6,6 @@ applications:
   name: your-app
   host: your-app
   disk_quota: 1024M
-  buildpack: https://github.com/cloudfoundry/python-buildpack#v1.5.4
+  buildpack: https://github.com/cloudfoundry/python-buildpack#v1.7.5
   cf_stacks:
-    - cflinuxfs2
+    - cflinuxfs3
