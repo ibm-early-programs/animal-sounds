@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Dogs and Cats Machine Learning Audio Prediction</title>
+    <style>
+        {{{payload.css}}}
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Dogs and Cats Machine Learning Audio Prediction</h1>
+            <h2>Cat or Dog?</h2>
+        </div>
+
+        <!-- New code starts here -->
+
+        <div>
+            <select id="id_listcatsdogs" class="image-picker show-html">
+                <optgroup label="Top Row">
+                    <option
+                        data-img-src="https://raw.githubusercontent.com/ibm-early-programs/animal-sounds/master/images/dog-888025_960_720.jpg"
+                        value="dog-888025_960_720.jpg"></option>
+                    <option
+                        data-img-src="https://raw.githubusercontent.com/ibm-early-programs/animal-sounds/master/images/305571892_29272c4b55_b.jpg"
+                        value="305571892_29272c4b55_b.jpg"></option>
+                    <option
+                        data-img-src="https://raw.githubusercontent.com/ibm-early-programs/animal-sounds/master/images/1090235720_da0ca9dc95_z.jpg"
+                        value="1090235720_da0ca9dc95_z.jpg"></option>
+                    <option
+                        data-img-src="https://raw.githubusercontent.com/ibm-early-programs/animal-sounds/master/images/A_beagle_focused.jpg"
+                        value="A_beagle_focused.jpg"></option>
+                </optgroup>
+                <optgroup label="Second Row">
+                    <option
+                        data-img-src="https://raw.githubusercontent.com/ibm-early-programs/animal-sounds/master/images/5765171917_e163fefaff_z.jpg"
+                        value="5765171917_e163fefaff_z.jpg"></option>
+                    <option
+                        data-img-src="https://raw.githubusercontent.com/ibm-early-programs/animal-sounds/master/images/6509910925_5d6e04628c_z.jpg"
+                        value="6509910925_5d6e04628c_z.jpg"></option>
+                    <option
+                        data-img-src="https://raw.githubusercontent.com/ibm-early-programs/animal-sounds/master/images/golden-retriever-164221_960_720.jpg"
+                        value="golden-retriever-164221_960_720.jpg"></option>
+                    <option
+                        data-img-src="https://raw.githubusercontent.com/ibm-early-programs/animal-sounds/master/images/6189656453_649cc0352d_z.jpg"
+                        value="6189656453_649cc0352d_z.jpg"></option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="vr-action">
+            <button type="button" id="id_analyzeAnimal">
+                Analyze Animal Image
+            </button>
+        </div>
+        <!-- New code ends here -->
+
+        
+        <div>
+            <p>
+                <label for="audiofile">Select Audio File:</label>
+                <input id="audiofile" type=file name=file accept="audio/*">
+                <button onclick="javascript:onAudioSendClick()">
+                    Process Audio
+                </button>
+            </p>
+        </div>
+
+        <div id="cats-dogs-result" class="cats-dogs-result">
+            <p>Result shows here</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        {{{payload.script}}}
+    </script>
+
+</body>
+
+</html>

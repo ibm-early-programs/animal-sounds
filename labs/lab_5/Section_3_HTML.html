@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Machine Learning with Animal Characteristics</title>
+    <style>{{{payload.css}}}</style>
+  </head>
+  <body>
+    <div>
+      <div class="visual-recognition-area">
+        <div class="visual-recognition-title">
+          <h2>Bird Type?</h2>
+        </div>
+        <div>
+            <p>
+              <label for="audiofile">Select Audio File:</label>
+              <input id="audiofile" type=file name=file accept="audio/*|video/*">
+              <button onclick="javascript:onAudioSendClick()">
+                Process Audio
+              </button>
+            </p>
+        </div>
+        <div id="cats-dogs-result" class="cats-dogs-result">
+            <p>Prediction result goes here</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>{{{payload.script}}}</script>
+  </body>
+</html>
